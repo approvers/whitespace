@@ -4,26 +4,25 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3d8ae45dad4db53ef7968c1d6c9767f0154eb6ab3e36a71b1c318e24c9fa93fb
+-- hash: 471db9584e997d2371c6bfd9ce5bb2dc322ffdab96849e575ab1c6d39e677ea0
 
 name:           whitespace
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/whitespace#readme>
-homepage:       https://github.com/githubuser/whitespace#readme
-bug-reports:    https://github.com/githubuser/whitespace/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2020 Author name here
-license:        BSD3
+description:    難解プログラミング言語Whitespaceの再実装版です。
+homepage:       https://github.com/approvers/whitespace#readme
+bug-reports:    https://github.com/approvers/whitespace/issues
+author:         Shuntaro Nishizawa
+maintainer:     shun@approvers.dev
+copyright:      2020 Approvers
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/whitespace
+  location: https://github.com/approvers/whitespace
 
 library
   exposed-modules:
