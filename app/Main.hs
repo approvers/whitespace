@@ -21,10 +21,14 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 module Main where
 
-import Lib
+import System.Environment (getArgs)
 
 main :: IO ()
-main = someFunc
+main = do
+    args <- getArgs
+    if length args /= 1
+    then usage
+    else putStrLn "Runtime is not implemented." -- TODO: ランタイムを実装すること
 
 usage :: IO ()
 usage = do
