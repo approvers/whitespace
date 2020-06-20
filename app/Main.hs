@@ -21,7 +21,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 module Main where
 
-import Lib
+import System.Environment (getArgs)
 
 main :: IO ()
-main = someFunc
+main = do
+    args <- getArgs
+    if length args /= 1
+    then usage
+    else putStrLn "Runtime is not implemented." -- TODO: ランタイムを実装すること
+
+usage :: IO ()
+usage = do
+    putStrLn "whitespace 0.1.0.0 (c) 2020 Approvers"
+    putStrLn "-------------------------------------"
+    putStrLn "Usage: whitespace [filepath]"
