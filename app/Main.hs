@@ -25,3 +25,9 @@ import Lib
 
 main :: IO ()
 main = someFunc
+
+usage :: IO ()
+usage = do
+    putStrLn "whitespace 0.1.0.0 (c) 2020 Approvers"
+    putStrLn "-------------------------------------"
+    putStrLn "Usage: whitespace [filepath]"
